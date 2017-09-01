@@ -1,0 +1,24 @@
+<html>
+
+
+<body>
+
+<h1> list of all the objects: </h1>
+
+{% for post in list %}
+
+<a href = '/posts/{{ post.id }}'>{{ post.title }}</a><br/>
+{{ post.id }}<br/>
+{{ post.content }}<br/>
+{{ post.updated }}<br/>
+{{ post.added }}<br/>
+
+{% endfor %}
+
+</body>
+</html>
+
+
+
+
+
